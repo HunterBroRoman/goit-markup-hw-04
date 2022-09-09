@@ -41,7 +41,6 @@ body {
   margin: 0; /*сбрасыввет margin от браузера*/
 }
 
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -177,15 +176,15 @@ img {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/bcg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
- }
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
- .heroy-content {
-padding-top: 200px;
-padding-bottom: 200px;
-text-align: center;
- }
+.heroy-content {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
 
 .slogan {
   margin: 0 auto;
@@ -221,22 +220,23 @@ text-align: center;
   cursor: pointer;
 }
 /* ----------style skills--------*/
-.hidden-header {
-  display: none;
-}
 
-.skills {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .skills-list {
   display: flex;
   padding: 0;
   margin: 0;
+  gap: 30px;
+}
+.skills-link::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
+  outline: 1px solid red;
 }
 
 .skills-title {
-  margin: 0;
+  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -309,6 +309,7 @@ text-align: center;
 .card {
   display: block;
   width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .card-name {
@@ -339,6 +340,49 @@ text-align: center;
   line-height: 1.8;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.soc-list {
+  margin-top: 16px;
+  padding-right: 32px;
+  padding-left: 32px;
+  display: flex;
+  gap: 10px;
+}
+
+.soc-item {
+ width: 40px;
+ height: 40px;
+}
+
+.soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  border-radius: 50%;
+  display: block;
+
+}
+
+/*---------------clients----------------*/
+
+.clients-titls {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.clients-titls {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
 }
 
 /*---------- style footer---------- */
@@ -425,6 +469,8 @@ text-align: center;
   color: var(--white-color);
   background-color: #2196f3;
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .work-link {
@@ -433,6 +479,11 @@ text-align: center;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.work-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 
 .work-name {
