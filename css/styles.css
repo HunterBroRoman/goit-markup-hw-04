@@ -142,6 +142,7 @@ img {
 
 .site-contact .item:last-child {
   margin-right: 0;
+  fill: blue;
 }
 
 .site-contact .info {
@@ -156,29 +157,40 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.site-contact .info:hover,
-.site-contact .info:focus {
-  color: var(--accent-color);
+
+.item-convert:hover .convert,
+.item-convert:focus .convert {
+  fill: #2196f3;
 }
 
-.item.convert::before {
+.item-phone:hover .telefon,
+.item-phone:focus .telefon {
+  fill: #2196f3;
+}
+
+.item-convert::before {
   content: "";
+}
+
+.convert {
   display: inline-block;
   width: 16px;
   height: 12px;
   margin-right: 10px;
-
-  outline: 1px solid red;
+  fill: #757575;
 }
 
 .item.phone::before {
   content: "";
+}
+
+.telefon {
   display: inline-block;
+  margin-left: 30px;
   width: 10px;
   height: 16px;
   margin-right: 10px;
-
-  outline: 1px solid red;
+  fill: #757575;
 }
 
 /* style index.html*/
