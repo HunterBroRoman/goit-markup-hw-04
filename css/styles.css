@@ -167,8 +167,8 @@ img {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  
-  outline: 1px solid red;  
+
+  outline: 1px solid red;
 }
 
 .item.phone::before {
@@ -177,9 +177,8 @@ img {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  
-  outline: 1px solid red;  
 
+  outline: 1px solid red;
 }
 
 /* style index.html*/
@@ -377,7 +376,6 @@ img {
 .soc-item {
   width: 44px;
   height: 44px;
-  
 }
 
 .soc-link {
@@ -387,16 +385,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #afb1b8; 
-}
-
-.card-soc-icon {
-  
+  fill: #afb1b8;
 }
 
 .soc-link:hover,
 .soc-link:focus {
-  background-color: #2196F3;;
+  background-color: #2196f3;
 }
 .soc-link:hover .card-soc-icon,
 .soc-link:focus .card-soc-icon {
@@ -406,6 +400,8 @@ img {
 /*---------------clients----------------*/
 
 .clients-titls {
+  margin: 0;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
@@ -414,15 +410,45 @@ img {
   color: #212121;
 }
 
-.clients-titls {
-  margin: 0;
-  margin-bottom: 50px;
-}
-
 .clients-list {
   display: flex;
   gap: 30px;
+  justify-content: space-between;
 }
+
+.client-item {
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-item :hover {
+  border: 1px solid #2196f3;
+}
+
+.comp-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comp-icon {
+  fill: #afb1b8;
+}
+
+.comp-icon:hover,
+.comp-icon:focus {
+  fill: #2196f3;
+}
+
+/*.comp-link:hover .comp-icon,
+.footer-link:focus .comp-icon {
+  fill: #ffffff;
+}*/
 
 /*---------- style footer---------- */
 
@@ -513,15 +539,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
-}.footer-soc-icon {
+}
+.footer-soc-icon {
   fill: #ffffff;
 }
 
 /*кращий віріант для ховера та фокуса для всього*/
 .footer-soc-link:hover,
 .footer-soc-link:focus {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 .footer-soc-link:hover .footer-soc-icon,
