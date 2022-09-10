@@ -352,16 +352,31 @@ img {
 }
 
 .soc-item {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
 }
 
 .soc-link {
   width: 100%;
   height: 100%;
-  background-color: blue;
+
   border-radius: 50%;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-soc-icon {
+  fill: #afb1b8;
+}
+
+.soc-link:hover,
+.soc-link:focus {
+  background-color: #2196F3;;
+}
+.soc-link:hover .card-soc-icon,
+.soc-link:focus .card-soc-icon {
+  fill: white;
 }
 
 /*---------------clients----------------*/
@@ -446,7 +461,7 @@ img {
 .footer-soc-title {
   margin: 0;
   margin-bottom: 20px;
-  
+
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -457,7 +472,6 @@ img {
 }
 
 .footer-soc-list {
-  
   display: flex;
   gap: 10px;
 }
@@ -470,9 +484,24 @@ img {
 .footer-soc-link {
   width: 100%;
   height: 100%;
-  background-color: blue;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}.footer-soc-icon {
+  fill: #ffffff;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: #2196F3;
+}
+
+.footer-soc-link:hover .footer-soc-icon,
+.footer-soc-link:focus .footer-soc-icon {
+  fill: #ffffff;
 }
 
 /* -------------style portfolio-------------------- */
