@@ -444,18 +444,12 @@ img {
 }
 
 .client-item {
-  width: 170px;
-  height: 92px;
-
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
-.client-item :hover {
-  border: 2px solid #2196f3;
-}
-
 .comp-link {
+  display: block;
   width: 100%;
   height: 100%;
   display: flex;
@@ -464,19 +458,13 @@ img {
 }
 
 .comp-icon {
-    display: inline-block;
-    fill: #AFB1B8;
-  
-}
-.comp-icon:hover,
-.comp-icon:focus {
-  fill: #2196f3;
+  fill: #AFB1B8;;
 }
 
-/*.comp-link:hover .comp-icon,
-.footer-link:focus .comp-icon {
-  fill: #ffffff;
-}*/
+.comp-link:hover .comp-icon,
+.comp-link:focus .comp-icon {
+  fill: #2196F3;
+}
 
 /*---------- style footer---------- */
 
