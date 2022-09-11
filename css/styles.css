@@ -393,13 +393,14 @@ img {
 
 .soc-list {
   margin-top: 16px;
-  padding-right: 32px;
-  padding-left: 32px;
+  padding-right: 22px;
+  padding-left: 22px;
   display: flex;
   gap: 10px;
 }
 
 .soc-item {
+  
   width: 44px;
   height: 44px;
 }
@@ -463,9 +464,10 @@ img {
 }
 
 .comp-icon {
-  fill: #afb1b8;
+    display: inline-block;
+    fill: #AFB1B8;
+  
 }
-
 .comp-icon:hover,
 .comp-icon:focus {
   fill: #2196f3;
