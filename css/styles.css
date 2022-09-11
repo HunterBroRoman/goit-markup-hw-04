@@ -256,21 +256,35 @@ img {
 
 .skills-list {
   display: flex;
-  padding: 0;
-  margin: 0;
   gap: 30px;
 }
-.skills-link::before {
-  content: "";
-  display: block;
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  outline: 1px solid red;
+
+.skills-icon {
+  background: #F5F4FA;
+  border: 1px solid #F5F4FA;
+  border: 1px soli ;
+  border-radius: 4px;
+  text-align: center;
 }
 
+.skills-icon:hover,
+.skills-icon:focus {
+  border: 2px solid #2196F3;
+}
+
+  .skill-icon {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .skill-icon:hover, 
+  .skill-icon:focus {
+  fill: #2196F3;
+  
+  }
+
 .skills-title {
-  margin-top: 30px;
+  margin-top: 35px;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -437,7 +451,7 @@ img {
 }
 
 .client-item :hover {
-  border: 1px solid #2196f3;
+  border: 2px solid #2196f3;
 }
 
 .comp-link {
