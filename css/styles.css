@@ -260,28 +260,17 @@ img {
 }
 
 .skills-icon {
-  background: #F5F4FA;
-  border: 1px solid #F5F4FA;
-  border: 1px soli ;
+  background: #f5f4fa;
+  border: 1px solid #f5f4fa;
+  border: 1px soli;
   border-radius: 4px;
   text-align: center;
 }
 
-.skills-icon:hover,
-.skills-icon:focus {
-  border: 2px solid #2196F3;
+.skill-icon {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
-
-  .skill-icon {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  
-  .skill-icon:hover, 
-  .skill-icon:focus {
-  fill: #2196F3;
-  
-  }
 
 .skills-title {
   margin-top: 35px;
@@ -400,7 +389,6 @@ img {
 }
 
 .soc-item {
-  
   width: 44px;
   height: 44px;
 }
@@ -458,12 +446,17 @@ img {
 }
 
 .comp-icon {
-  fill: #AFB1B8;;
+  fill: #afb1b8;
+}
+
+.comp-link:hover,
+.comp-link:focus {
+  border: 1px solid #2196f3;
 }
 
 .comp-link:hover .comp-icon,
 .comp-link:focus .comp-icon {
-  fill: #2196F3;
+  fill: #2196f3;
 }
 
 /*---------- style footer---------- */
