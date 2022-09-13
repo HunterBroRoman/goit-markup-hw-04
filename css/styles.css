@@ -42,8 +42,7 @@ body {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 1200px;
 
   padding-right: 15px;
@@ -61,16 +60,17 @@ img {
 
 /* ------Page header------- */
 
+.header {
+  display: flex;
+}
 .page-header {
   display: flex;
-  min-width: 1600px;
 
   height: 80px;
   margin-top: 0;
 
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
-
 }
 
 .main-nav {
@@ -633,8 +633,8 @@ img {
   text-decoration: none;
 }
 
-.work-item:hover,
-.work-item:focus {
+.work-link:hover,
+.work-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
